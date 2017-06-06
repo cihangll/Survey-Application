@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//
+DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="DefaultTemplate" template="/WEB-INF/templates/defaultTemplate.jsp">
+		<put-attribute name="includes" value="" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp" />
+	</definition>
+
+	<definition name="SurveyTemplate" template="/WEB-INF/templates/surveyTemplate.jsp">
+		<put-attribute name="includes" value="" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp" />
+	</definition>
+
+	<definition name="SurveyEditorTemplate"
+		template="/WEB-INF/templates/surveyEditorTemplate.jsp">
+		<put-attribute name="includes" value="" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp" />
+	</definition>
+
+	<definition name="home" extends="DefaultTemplate">
+		<put-attribute name="title" value="Surveys Homepage" />
+		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp" />
+	</definition>
+
+	<definition name="login" extends="DefaultTemplate">
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp" />
+	</definition>
+
+	<definition name="newaccount" extends="DefaultTemplate">
+		<put-attribute name="includes"
+			value="/WEB-INF/tiles/newaccountscript.jsp" />
+		<put-attribute name="title" value="Create new account" />
+		<put-attribute name="content" value="/WEB-INF/tiles/newaccount.jsp" />
+	</definition>
+
+	<definition name="accountcreated" extends="DefaultTemplate">
+		<put-attribute name="title" value="Account Created" />
+		<put-attribute name="content" value="/WEB-INF/tiles/accountcreated.jsp" />
+	</definition>
+
+	<definition name="admin" extends="DefaultTemplate">
+		<put-attribute name="title" value="Admin Page" />
+		<put-attribute name="content" value="/WEB-INF/tiles/admin.jsp" />
+	</definition>
+
+	<definition name="createsurvey" extends="DefaultTemplate">
+		<put-attribute name="title" value="Create Survey" />
+		<put-attribute name="content" value="/WEB-INF/tiles/createsurvey.jsp" />
+	</definition>
+
+	<definition name="denied" extends="DefaultTemplate">
+		<put-attribute name="title" value="Denied" />
+		<put-attribute name="content" value="/WEB-INF/tiles/denied.jsp" />
+	</definition>
+
+	<definition name="surveycreated" extends="DefaultTemplate">
+		<put-attribute name="title" value="Survey Created" />
+		<put-attribute name="content" value="/WEB-INF/tiles/surveycreated.jsp" />
+	</definition>
+
+	<definition name="error" extends="DefaultTemplate">
+		<put-attribute name="title" value="Error Page" />
+		<put-attribute name="content" value="/WEB-INF/tiles/error.jsp" />
+	</definition>
+
+	<definition name="loggedout" extends="DefaultTemplate">
+		<put-attribute name="title" value="Loggedout Page" />
+		<put-attribute name="content" value="/WEB-INF/tiles/loggedout.jsp" />
+	</definition>
+
+	<definition name="surveydeleted" extends="DefaultTemplate">
+		<put-attribute name="title" value="Delete Success" />
+		<put-attribute name="content" value="/WEB-INF/tiles/surveydeleted.jsp" />
+	</definition>
+	<!-- Survey Template -->
+	<definition name="surveyPage" extends="SurveyTemplate">
+		<put-attribute name="includes"
+			value="/WEB-INF/tiles/surveyPageScript.jsp" />
+		<put-attribute name="title" value="Survey Page" />
+		<put-attribute name="content" value="/WEB-INF/tiles/surveyPage.jsp" />
+	</definition>
+
+	<!-- Survey Editor Template -->
+	<definition name="surveyEditorPage" extends="SurveyEditorTemplate">
+		<put-attribute name="includes"
+			value="/WEB-INF/tiles/surveyEditorPageScript.jsp" />
+		<put-attribute name="title" value="Survey Editor Page" />
+		<put-attribute name="content"
+			value="/WEB-INF/tiles/surveyEditorPage.jsp" />
+	</definition>
+
+
+
+
+
+
+
+
+
+
+
+</tiles-definitions>
