@@ -59,7 +59,7 @@ With this application you can create and edit surveys.
 
 ![4](https://user-images.githubusercontent.com/6229029/26835984-420cf9e2-4ae2-11e7-804d-fae65200a541.png)
 
-![5](https://user-images.githubusercontent.com/6229029/26835988-467a66cc-4ae2-11e7-82f6-92284e15ff48.png)
+![5](https://user-images.githubusercontent.com/6229029/26836471-98df32a2-4ae3-11e7-9330-f1427c994dc8.png)
 
 ![6](https://user-images.githubusercontent.com/6229029/26835995-49a2c916-4ae2-11e7-8476-426050785a74.png)
 
