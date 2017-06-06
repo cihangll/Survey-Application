@@ -26,7 +26,7 @@ With this application you can create and edit surveys.
 	```
 
 3. ***Maven > Update*** project diyerek projenin gerekli dependency lerini indirin.
-4. Projeyi çalıştırabilirsiniz.**Not:**Kayıt olunduğunda user rolü `ROLE_USER` olarak kaydedilir.Bunu db üzerinden `ROLE_ADMIN` değeri ile değiştirip admin yetkisine sahip olabilirsiniz.
+4. Projeyi çalıştırabilirsiniz.Not:Kayıt olunduğunda user rolü `ROLE_USER` olarak kaydedilir.Bunu db üzerinden `ROLE_ADMIN` değeri ile değiştirip admin yetkisine sahip olabilirsiniz.
 
 <hr>
 
