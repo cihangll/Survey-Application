@@ -15,14 +15,18 @@ With this application you can create and edit surveys.
 	![1](https://cloud.githubusercontent.com/assets/6229029/26834440/066a79ea-4ade-11e7-8d79-7539247bc352.png)
 	
 	```xml
-		<context>
-			<Resource name="jdbc/spring" auth="Container" 	type="javax.sql.DataSource" 	maxActive="100" maxIdle="30" 	maxWait="10000" username="root" 	password="root" 	driverClassName="com.mysql.jdbc.Driver" 	url="jdbc:mysql://	localhost:3306/surveydb"
+		<Context>
+			..........
+			<Resource name="jdbc/spring" auth="Container" 	type="javax.sql.DataSource" 
+				maxActive="100" maxIdle="30" 	maxWait="10000" username="root" 
+				password="root" driverClassName="com.mysql.jdbc.Driver" 
+				url="jdbc:mysql://localhost:3306/surveydb"
 			/>
 		</Context>
 	```
 
 3. ***Maven > Update*** project diyerek projenin gerekli dependency lerini indirin.
-4. Projeyi çalıştırabilirsiniz.***Not:***Kayıt olunduğunda user rolü `ROLE_USER` olarak kaydedilir.Bunu db üzerinden `ROLE_ADMIN` değeri ile değiştirip admin yetkisine sahip olabilirsiniz.
+4. Projeyi çalıştırabilirsiniz.**Not:**Kayıt olunduğunda user rolü `ROLE_USER` olarak kaydedilir.Bunu db üzerinden `ROLE_ADMIN` değeri ile değiştirip admin yetkisine sahip olabilirsiniz.
 
 <hr>
 
